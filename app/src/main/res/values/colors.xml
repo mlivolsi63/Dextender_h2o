@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sa_green">#00A000</color>
+    <color name="sa_blue">#0000A0</color>
+
+    <color name="menu_green">#006000</color>
+    <color name="menu_blue">#000060</color>
+
+    <color name="accent_green">#66ff66</color>
+    <color name="accent_blue">#6666ff</color>
+
+    <color name="deep_green">#002000</color>
+    <color name="deep_blue">#000020</color>
+
+    <color name="light_green">#00ff00</color>
+    <color name="light_blue">#0000ff</color>
+
+    <color name="light_gray">#d0d0d0</color>
+    <color name="white">#ffffff</color>
+    <color name="goldenrod">#daa520</color>
+    <color name="yellow">#ffff00</color>
+    <color name="red">#ff0000</color>
+    <color name="rust">#c00000</color>
+    <color name="black">#000000</color>
+
+
+</resources>

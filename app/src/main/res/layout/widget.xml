@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- =================================================================================
+     Author         : Mike LiVolsi
+     Original Author: http://www.vogella.com/tutorials/AndroidWidgets/article.html
+     widget layout
+     This one is interesting in that it uses a background that's in
+     the drawable directory. That directory had to be created and isn't a default dir.
+     Then I created this file.
+  ================================================================================ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/widget_usbTime"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="2dip"
+        android:textSize="9sp"
+        android:text="00:00:00"
+        />
+
+
+    <TextView
+        android:id="@+id/widget_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="1dip"
+        android:text="101"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/off"
+        android:contentDescription="bg trend"
+        android:id="@+id/widget_trend"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/widget_filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="1dip"
+        android:text="" />
+</LinearLayout> 

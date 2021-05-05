@@ -1,0 +1,459 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- message at top of screen -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+
+         <!-- What's running -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_cur_zone_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentZoneName"
+                android:text="@string/frag1_cur_zone_name_value"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                />
+        </LinearLayout>
+
+        <!-- What's running (zone ID) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+            />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/currentZone"
+                android:text="@string/frag1_cur_zone_value"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+            />
+        </LinearLayout>
+
+
+    <!-- ======== BREAK 1 =============-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/frag1_sectionHeader1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+        />
+
+        <!-- Blue line  -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0000ff"
+            android:clickable="false" />
+
+        <!-- ======== Last zone to run =============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/frag1_last_zone_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+            />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/lastZone"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/frag1_last_zone_value"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+    <!-- ======== Last zone to run time =============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/frag1_last_runtime_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastZoneRuntime"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/frag1_runtime_value"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+            />
+        </LinearLayout>
+
+
+    <!-- ======== Sunrise time =============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_sunrise_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+            />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/sunriseTime"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/frag1_sunrise_value"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+            />
+        </LinearLayout>
+
+    <!-- ======== Sunset time =============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/frag1_sunset_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunsetTime"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/frag1_sunrise_value"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+            />
+        </LinearLayout>
+
+        <!-- ==============  FILLER ================== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="start"
+            android:layout_height="1dp"
+        />
+
+        <!-- ==============  BREAK 2 ================== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/frag1_sectionHeader2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/frag1Title2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0000ff"
+            android:clickable="false"
+        />
+
+    <!-- Android Service Status  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_android_stat_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="bottom" />
+
+            <ImageView
+                android:paddingTop="0dp"
+                android:paddingEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/androidRealStat"
+                android:src="@mipmap/power_unknown"
+                android:paddingLeft="20dp"
+            />
+        </LinearLayout>
+
+    <!-- App connectivity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_connection_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="bottom" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/connectionRealStat"
+                android:src="@mipmap/power_unknown"
+                android:minHeight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+            />
+        </LinearLayout>
+
+    <!-- Row 7 - System Status  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_sys_stat_title"
+                android:id="@+id/systemStatusText"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="bottom" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/systemRealStat"
+                android:src="@mipmap/power_unknown"
+                android:minHeight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+         />
+        </LinearLayout>
+
+    <!-- Row 8 - Server Status  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:text="@string/frag1_server_stat_title"
+                android:id="@+id/serverStatusText"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/serverRealStat"
+                android:src="@mipmap/power_unknown"
+                android:minHeight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+        />
+        </LinearLayout>
+
+    <!-- Row 9 - Scheduler Status  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/frag1_sched_stat_title"
+                android:id="@+id/schedulerStatusText"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/schedRealStat"
+                android:src="@mipmap/power_unknown"
+                android:minHeight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/frag1_sched_controllerIP_title"
+                android:id="@+id/controllerIP_title"
+                android:layout_gravity="start"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/frag1_controllerIP"
+                android:src="@mipmap/power_unknown"
+                android:minHeight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:orientation="vertical"
+
+            >
+            <ImageButton style="?android:borderlessButtonStyle"
+                android:id="@+id/frag1_refreshButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/refresh"
+                android:clickable="true"
+                android:gravity="center"
+                android:minHeight="65dp"
+                android:minWidth="65dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom|end"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frag1_appStatus"
+                android:text="@string/frag1_app_status"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="bottom|end"
+                android:gravity="bottom"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

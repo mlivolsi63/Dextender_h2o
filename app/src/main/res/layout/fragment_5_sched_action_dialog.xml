@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sched_dialogueRoot"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedName"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/dash"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedStatus"
+            android:text="@string/dash"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4000ff"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sched_breakTitle02"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/frag4Title2"
+        />
+
+    <!-- Run on days -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="@string/sched_schedule_days_title"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight=".50"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sched_schedule_days_value"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/sched_schedule_days_value"
+            android:layout_weight=".50"
+            />
+    </LinearLayout>
+
+    <!-- ======== "Time"  =============-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sched_breakTitle03"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/frag4Title3"
+        />
+
+    <!-- Blue line  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_columnSpan="4"
+        android:layout_column="0"
+        android:background="#0000ff"
+        android:clickable="false"
+        />
+
+
+    <!-- Time that it runs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sched_schedule_time_title"
+            android:textColor="@color/white"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight=".50"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sched_schedule_time_value"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight=".50"
+
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4000ff"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+       />
+
+    <!-- BUTTONS -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical">
+        <Button style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sequenceButtonDisable"
+            android:drawableTop="@mipmap/disable"
+            />
+        <Button style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sequenceButtonEnable"
+            android:drawableTop="@mipmap/enable"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical">
+
+        <Button style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sequenceButtonDelete"
+            android:drawableTop="@mipmap/delete"
+            />
+    </LinearLayout>
+
+</LinearLayout>

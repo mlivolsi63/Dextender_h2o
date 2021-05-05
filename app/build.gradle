@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'myReleaseKey'
+            keyPassword 'NoelleSandie123!'
+            //storeFile file('C:/Users/livolsi/AndroidKeystore/keystore.release.jks')
+            storeFile file('/Volumes/NO NAME/Users/Mike/AndroidProjects/AndroidKeystore/keystore.release.jks')
+            storePassword 'NoelleSandie123!'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    useLibrary  'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.dextender.dextender_h2o"
+        minSdkVersion 22
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.1.16300 - Arctic Sea"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v13:24.0.0'
+    compile 'com.android.support:support-v4:20.0.0'
+
+    wearApp project(':myWear')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.google.android.gms:play-services:9.4.0'
+
+}

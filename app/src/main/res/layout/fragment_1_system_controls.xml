@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:useDefaultMargins="true"
+    android:columnOrderPreserved="false"
+    android:columnCount="3"
+    android:id="@+id/fragment_1_system_controls"
+    android:background="@mipmap/water"
+    android:orientation="vertical"
+    >
+    <!--android:background="@drawable/ladybug3"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+    />
+
+    <!-- ======== Big Status  Number =============-->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/frag1_sysctrl_title"
+        android:layout_gravity="start"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/frag1_sysctrl_value"
+        android:id="@+id/frag1_sysctrl_value"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <!-- filler -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <!-- ======== Buttons =============-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom">
+    <Button style="?android:borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/buttonKill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ok"
+        android:text="@string/frag1_syscntrl_buttonKill"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="systemKill"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button style="?android:borderlessButtonStyle"
+        android:id="@+id/buttonOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawableTop="@mipmap/play"
+        android:text="@string/frag1_syscntrl_buttonOn"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="systemOn"
+        android:layout_weight="1" />
+
+
+    <Button style="?android:borderlessButtonStyle"
+        android:id="@+id/buttonOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/rust"
+        android:text="@string/frag1_syscntrl_buttonOff"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="systemOff"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <!-- Next row -->
+
+
+    <Button style="?android:borderlessButtonStyle"
+        android:id="@+id/buttonPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@mipmap/yellow"
+        android:text="@string/frag1_syscntrl_buttonPause"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="systemPauseUnPause"
+    />
+
+        </LinearLayout>
+
+</LinearLayout>

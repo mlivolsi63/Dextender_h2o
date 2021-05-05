@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/water"
+    >
+    <!-- Row 0 Padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- ======== Big Zone Number (Title) =============-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zd_zone_id_title"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            />
+        <!-- ======== The big number =============-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zd_zoneName"
+            android:text="@string/zd_zone_name_value"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+        />
+    </LinearLayout>
+    <!-- ======== Buffer =============-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zd_currentZone"
+            android:text="@string/zd_zone_id_value"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="start"
+            android:paddingStart="20dp"
+        />
+    </LinearLayout>
+    <!-- ======== BREAK 1 =============-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/frag1Title1"
+        android:paddingTop="10dp"
+     />
+
+    <!-- Blue line  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000ff"
+        android:clickable="false" />
+
+
+    <!-- ======== Zone Status (online|offline) =============-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/zd_zone_status_title"
+            android:paddingLeft="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zd_zoneStatus"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/zd_zone_status_value"
+        />
+    </LinearLayout>
+
+
+    <!-- ======== Last time zone ran =============-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/zd_zone_last_time_title"
+            android:paddingStart="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zd_zoneLastTime"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/zd_zone_last_time_value"
+            android:layout_gravity="start"
+        />
+    </LinearLayout>
+
+    <!-- ==============  Button enable / disable ================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button style="?android:borderlessButtonStyle"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zd_zone_button_disable"
+                android:id="@+id/zoneButtonDisable"
+                android:drawableTop="@mipmap/ok"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:onClick="zoneDisable"
+            />
+
+        <Button style="?android:borderlessButtonStyle"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zd_zone_button_enable"
+            android:id="@+id/zoneButtonEnable"
+            android:drawableTop="@mipmap/ok"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:typeface="normal"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:onClick="zoneEnable"
+            android:layout_alignParentRight="true"
+        />
+            </LinearLayout>
+    <!-- ==============  Button ================== -->
+    <Button style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zd_zone_button_run"
+        android:id="@+id/zoneButtonRun"
+        android:longClickable="false"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:onClick="zoneRun"
+        android:drawableTop="@mipmap/play"
+    />
+    </LinearLayout>
+
+
+        <!-- Edit Button -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="bottom|end"
+        >
+        <ImageButton style="?android:borderlessButtonStyle"
+            android:layout_gravity="center"
+            android:id="@+id/frag3_editZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/edit"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="65dp"
+            android:minWidth="65dp"
+            android:onClick="editZoneNameButton"
+            />
+    </LinearLayout>
+
+</FrameLayout>

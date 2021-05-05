@@ -1,0 +1,46 @@
+<begin>
+<tcount value=9>
+<tname=dexserver tableid=1 fields=6 rows=1>
+<r>1|http://www.dextender.com/cgi-bin/iamhere.cgi|80|1234-4567-7890|21124ever|1432215131</r>
+</tname>
+<tname=job_group tableid=2 fields=3 rows=1>
+<r>1|1434427200|1</r>
+</tname>
+<tname=job tableid=3 fields=9 rows=1>
+<r>1|1|1|0|1|0|0|5|1434428822</r>
+</tname>
+<tname=log tableid=4 fields=3 rows=1>
+<r>1|default message|1434428822</r>
+</tname>
+<tname=schedules tableid=5 fields=14 rows=1>
+<r>1|Initial Schedule|1|12:23:34|0|0|0|0|0|0|0|0|0|1434428822</r>
+</tname>
+<tname=sequences tableid=6 fields=4 rows=1>
+<r>1|0|initial sequence</r>
+</tname>
+<tname=sequence_zones tableid=7 fields=6 rows=1>
+<r>1|1|1|0|0</r>
+</tname>
+<tname=solar tableid=8 fields=4 rows=1>
+<r>16020|70200</r>
+</tname>
+<tname=status tableid=9 fields=7 rows=1>
+<r>1|system status|1|0|0|0|uno</r>
+</tname>
+<tname=zones tableid=10 fields=4 rows=12>
+<r>1|default zone  1|1</r>
+<r>2|default zone  2|1</r>
+<r>3|default zone  3|1</r>
+<r>4|default zone  4|1</r>
+<r>5|default zone  5|1</r>
+<r>6|default zone  6|1</r>
+<r>7|default zone  7|1</r>
+<r>8|default zone  8|1</r>
+<r>9|default zone  9|1</r>
+<r>10|default zone 10|1</r>
+<r>11|default zone 11|1</r>
+<r>12|default zone 12|1</r>
+</tname>
+</tcount>
+</begin>
+

@@ -1,0 +1,210 @@
+<resources>
+
+<!-- GENERIC VALUES -->
+    <string name="action_settings">Settings</string>
+    <string name="offline">offline</string>
+    <string name="online">online</string>
+    <string name="copyright">Copyright 2015&#8211;2016 dExtender.com\nAll Rights Reserved.</string>
+    <string name="notime">00:00:00</string>
+    <string name="dash">---</string>
+    <string name="odd">Odd days</string>
+    <string name="even">Even days</string>
+    <!-- For the circle crap -->
+    <string name="Off">Off</string>
+    <string name="On">On</string>
+    <string name="low">Low</string>
+    <string name="default_progress">0 minutes</string>
+    <string name="submitButton">A Submit button</string>
+    <string name="networkFail01">Could not connect to the network</string>
+<!-- END GENERIC -->
+
+    <!-- Activity names in the manifest -->
+    <string name="label_alarm">MyAlarm</string>
+    <string name="label_speaker">MySpeaker</string>
+    <string name="label_search">MySearch</string>
+
+    <!-- Tab Titles -->
+    <string name="app_name">dExtender-h2o</string>
+
+    <string name="title_section1">Status</string>
+    <string name="title_section2">Jobs</string>
+    <string name="title_section3">Zones</string>
+    <string name="title_section4">Sequences</string>
+    <string name="title_section5">Schedules</string>
+    <string name="title_section6">Logs</string>
+
+
+    <!-- Fragment 1 -->
+    <string name="frag1_app_status"></string>
+    <string name="frag1_sectionHeader1">Status</string>
+    <string name="frag1_sectionHeader2">System Components</string>
+
+
+    <string name="frag1_cur_zone_title">Current running zone</string>
+    <string name="frag1_cur_zone_name_value">---</string>
+
+    <string name="frag1_last_zone_title">Last zone</string>
+    <string name="frag1_last_runtime_title">Last run time</string>
+    <string name="frag1_android_stat_title">Android service</string>
+    <string name="frag1_connection_title">Connection</string>
+    <string name="frag1_sys_stat_title">Overall controller status</string>
+    <string name="frag1_server_stat_title">Controller server</string>
+    <string name="frag1_sched_stat_title">Controller scheduler</string>
+    <string name="frag1_sunrise_title">Sunrise</string>
+    <string name="frag1_sunset_title">Sunset</string>
+
+    <string name="frag1_cur_zone_value">-</string>
+    <string name="frag1_last_zone_value">-</string>
+    <string name="frag1_runtime_value">--:--:--</string>
+    <string name="frag1_sunrise_value">--:--:--</string>
+    <string name="frag1_sunset_value">--:--:--</string>
+    <string name="frag1_sched_controllerIP_title">Controller Address</string>
+
+
+    <string name="frag1_button">Refresh</string>
+
+    <!-- fragment_1_system_controls -->
+
+    <string name="frag1_sysctrl_title">Status</string>
+    <string name="frag1_sysctrl_value">---</string>
+
+    <string name="frag1_syscntrl_buttonPause">Pause the system</string>
+    <string name="frag1_syscntrl_buttonKill">Kill running zones</string>
+    <string name="frag1_syscntrl_buttonOff">System\noff</string>
+    <string name="frag1_syscntrl_buttonOn">System\non</string>
+
+
+    <!-- Zone Detail -->
+    <string name="zd_zone_id_title">Zone</string>
+    <string name="zd_zone_id_value">10</string>
+    <string name="zd_zone_name_value">Blue Sky</string>
+
+    <string name="zd_zone_status_title">Zone status</string>
+    <string name="zd_zone_status_value">unknown</string>
+    <string name="zd_zone_last_time_title">Last run time</string>
+    <string name="zd_zone_last_time_value">--:--:--</string>
+
+    <string name="zd_zone_button_enable">Enable</string>
+    <string name="zd_zone_button_disable">Disable</string>
+    <string name="zd_zone_button_run">Manually run</string>
+
+
+    <!-- Sequence Detail -->
+    <string name="sd_sequence_id_title">Sequence</string>
+    <string name="sd_sequence_id_value">---</string>
+    <string name="sd_sequence_name_value"> </string>
+
+    <string name="sd_sequence_status_title">Sequence status</string>
+    <string name="sd_sequence_status_value">unknown</string>
+    <string name="sd_sequence_last_time_title">Last run time</string>
+    <string name="sd_sequence_last_time_value">--:--:--</string>
+
+    <string name="sd_breakTitle01">Status</string>
+    <string name="sd_breakTitle02">Zones</string>
+
+    <string name="sd_sequence_button_enable">Enable</string>
+    <string name="sd_sequence_button_disable">Disable</string>
+    <string name="sd_sequence_button_run">Manually run</string>
+
+    <!-- Schedule Detail -->
+    <string name="shed_schedule_id_title">Schedule</string>
+    <string name="sched_schedule_id_value">---</string>
+
+    <string name="sched_schedule_status_title">Schedule status</string>
+    <string name="shed_schedule_status_value">unknown</string>
+
+    <string name="sched_breakTitle01">Status</string>
+    <string name="sched_breakTitle02">Days</string>
+    <string name="sched_breakTitle03">Time</string>
+
+
+    <string name="sched_schedule_days_title">Runs on</string>
+    <string name="sched_schedule_days_value"> </string>
+
+    <string name="sched_schedule_time_title"> </string>
+    <string name="sched_schedule_time_value"> </string>
+    <!-- FRAG 4 -->
+    <string name="frag4B_header">Long press a field to display options</string>
+    <string name="frag4B_runtime">Runtime</string>
+    <string name="frag4B_zone">Zone</string>
+
+    <!-- FRAG 5 -->
+    <string name="frag5_addsched_name">Schedule name</string>
+    <string name="frag5_addsched_forseq">For sequence</string>
+    <string name="frag5_addsched_start">Start at : </string>
+    <string name="frag5_addsched_when">Sunrise/Sunset</string>
+    <string name="frag5_addsched_S">S</string>
+    <string name="frag5_addsched_M">M</string>
+    <string name="frag5_addsched_T">T</string>
+    <string name="frag5_addsched_W">W</string>
+    <string name="frag5_addsched_F">F</string>
+    <string name="frag5_addsched_odd">Odd</string>
+    <string name="frag5_addsched_even">Even</string>
+
+    <!-- Preferences -->
+    <string name="pref_uid">Enter Your Access Code</string>
+    <string name="pref_uid_sum">Your access code from dExtender.com</string>
+    <string name="pref_controller">Active Controller</string>
+    <string name="pref_controller_sum">Which controller do you want to communicate with</string>
+    <string name="pref_ctrlStatus">Turn on/off controller</string>
+    <string name="pref_ctrlStatus_sum">Turn the controller on or off</string>
+    <string name="pref_intro_tune">Intro Tune</string>
+    <string name="pref_intro_tune_sum">Play the dExtender tune on startup</string>
+    <string name="pref_svc">Background Service</string>
+    <string name="pref_svc_sum">Background service</string>
+    <string name="pref_cloud">Post to the Cloud</string>
+    <string name="pref_cloud_sum">Start/Stop sending data\nto the cloud</string>
+    <string name="pref_refresh_interval">Refresh Interval</string>
+    <string name="pref_refresh_interval_sum">Longer intervals save battery life</string>
+    <string name="pref_vibrate">Vibrate</string>
+    <string name="pref_vibrate_sum">Vibrate this device (if supported)</string>
+    <string name="pref_override">Alarm in Silent Mode</string>
+    <string name="pref_override_sum">Play alarm even when the device is in silent mode</string>
+    <string name="pref_service_failure">Service Error Alarm</string>
+    <string name="pref_service_failure_sum">Sound to play when one of the service components has failed</string>
+
+    <string name="pref_solidBackground">Background Image</string>
+    <string name="pref_solidBackground_sum">Have an image instead of a solid black background</string>
+
+    <!-- Services / Notification Tray -->
+    <string name="service_stat1">dExtender</string>
+    <string name="service_sum">dExtender Service is Running</string>
+
+
+
+    <!-- HttpPost -->
+    <!-- First call the operator, then call the controller -->
+    <string name="http_operator">http://www.dextender.com</string>
+
+
+    <!-- Splash -->
+    <string name="splash_banner">dExtender-h2o</string>
+
+
+    <!-- About -->
+    <string name="about_staff"> Our staff was found on the New Jersey Shore\n
+                                Shore after Hurricane Sandy. It was sanded\n
+                                and stained with MinWax PolyShades\n
+                                (actually, that\'s true).\n\n
+                                This app is the second in a series of planned apps.\n
+                                The first one (dExtender) is an app that allows remote\n
+                                monitoring of people using the Dexcom receiver.\n\n
+                                A little about me. I\'m a database guy \n
+                                (Oracle, MySQL, SQLite, DB2) whose worked\n
+                                for ATT Labs, worked at a number of Wall\n
+                                Street firms, a VOIP company, etc..\n
+                                This project, in terms of technical know how,\n
+                                has dwarfed any project I\'ve ever worked on.\n
+                                \n
+                                Special thanks to Travis at "The New Boston"\n\n
+                                \n\n
+                                I can be reached at
+
+                                <a>admin@dextender.com</a>
+    </string>
+    <string name="the_new_boston"><a href="https:www.thenewboston.com">The New Boston</a></string>
+
+
+    <string name="about_email_subject">hello</string>
+    <string name="about_copyright"> Copyright 2015 - dExtender.com All Rights Reserved</string>
+</resources>

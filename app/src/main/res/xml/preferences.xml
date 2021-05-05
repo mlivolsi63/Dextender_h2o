@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings"
+        android:key="pref_general_behavior">
+
+        <PreferenceScreen
+                android:key="button_alert_category_key"
+                android:title="Alerts"
+                android:persistent="false">
+
+
+            <PreferenceCategory
+                android:title="Alarm Sounds">
+
+                <RingtonePreference
+                    android:key="serviceAlarmTone"
+                    android:ringtoneType="alarm"
+                    android:title="@string/pref_service_failure"
+                    android:summary="@string/pref_service_failure_sum"
+                    android:showDefault="true"
+                    android:showSilent="true"
+                    android:defaultValue="content://settings/system/notification_sound" />
+                <ListPreference
+                    android:entries="@array/playTimeOptions"
+                    android:entryValues="@array/playTimeValues"
+                    android:key="pref_maxPlayTime"
+                    android:summary="How long to play a warning tone"
+                    android:title="Length of Alarm Tone" />
+                <SwitchPreference
+                    android:id="@+id/pref_alert_vibrate"
+                    android:title="@string/pref_vibrate"
+                    android:key="pref_alert_vibrate"
+                    android:defaultValue="true"
+                    android:summary="@string/pref_vibrate_sum"/>
+                <SwitchPreference
+                    android:id="@+id/pref_alert_override"
+                    android:title="@string/pref_override"
+                    android:key="pref_alert_override"
+                    android:defaultValue="false"
+                    android:summary="@string/pref_override_sum"/>
+            </PreferenceCategory>
+
+            <PreferenceCategory
+                android:title="Snooze Settings">
+
+                <ListPreference
+                    android:entries="@array/serviceSnoozeElapsedEntries"
+                    android:entryValues="@array/serviceSnoozeElapsedValues"
+                    android:key="pref_serviceSnoozeElapse"
+                    android:summary="Minutes to snooze between service alarms"
+                    android:title="Service Error Snooze time" />
+              </PreferenceCategory>
+
+
+        </PreferenceScreen>
+
+
+        <PreferenceScreen
+            android:key="button_general_category_key"
+            android:title="Service Settings"
+            android:persistent="false">
+            <SwitchPreference
+                android:id="@+id/prefsvc"
+                android:title="@string/pref_svc"
+                android:key="prefsvc"
+                android:defaultValue="false"
+                android:summary="@string/pref_svc_sum"/>
+
+            <ListPreference
+                android:id="@+id/pref_refresh_interval"
+                android:entries="@array/intervalOptions"
+                android:entryValues="@array/intervalValues"
+                android:key="pref_refresh_interval"
+                android:title="@string/pref_refresh_interval"
+                android:summary="@string/pref_refresh_interval_sum"
+                android:dependency="prefsvc"
+            />
+            <SwitchPreference
+                android:id="@+id/pref_ctrlStatus"
+                android:title="@string/pref_ctrlStatus"
+                android:key="pref_ctrlStatus"
+                android:defaultValue="false"
+                android:summary="@string/pref_ctrlStatus_sum"/>
+
+            <PreferenceCategory
+                android:title="Pause Controller">
+                <Preference android:title="Controller"
+                    android:id="@+id/pref_pause"
+                    android:key="pref_pause"
+                    android:dependency="pref_ctrlStatus"
+                    android:summary="Pause the controller for a period of time"/>
+            </PreferenceCategory>
+
+            <PreferenceCategory
+                android:title="Zones">
+
+                <Preference android:title="Stop running zones"
+                    android:key="pref_killZones"
+                    android:summary="Stop zones that are currently running and clean the run queue"
+                    android:dependency="pref_ctrlStatus"/>
+            </PreferenceCategory>
+
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <!-- Screen 1 - semi-serious options (except for behavior which is import) -->
+    <PreferenceCategory
+        android:title="Behavior Mode"
+        android:key="pref_account_behavior">
+
+        <SwitchPreference
+            android:id="@+id/pref_intro_tune"
+            android:title="@string/pref_intro_tune"
+            android:key="pref_intro_tune"
+            android:defaultValue="true"
+            android:summary="@string/pref_intro_tune_sum"/>
+
+        <ListPreference
+            android:id="@+id/pref_backgroundImages"
+            android:key="pref_backgroundImages"
+            android:title="@string/pref_solidBackground"
+            android:summary="@string/pref_solidBackground_sum"
+            android:entries="@array/backGround"
+            android:entryValues="@array/backGroundValues" />
+
+    </PreferenceCategory>
+
+    <!-- Screen 1 - second to last option -->
+
+    <PreferenceCategory
+        android:title="Account"
+        android:key="pref_account_settings">
+        <EditTextPreference
+            android:id="@+id/pref_uid_value"
+            android:key="pref_uid_value"
+            android:title="@string/pref_uid"
+            android:dialogTitle="Enter with format username/password"
+            android:summary=" "
+            />
+        <ListPreference
+            android:id="@+id/pref_controller"
+            android:title="@string/pref_controller"
+            android:key="pref_controller"
+            android:dialogTitle="Enter the controller number"
+            android:summary="@string/pref_controller_sum"
+            android:entries="@array/controllerId"
+            android:entryValues="@array/controllerValues"
+            />
+    </PreferenceCategory>
+
+
+    <!-- Screen 1 - Screen 1, last option -->
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference android:title="About"
+            android:key="pref_about"
+            android:summary="About dExtender and our Staff"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

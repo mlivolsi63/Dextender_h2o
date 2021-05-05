@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000020"
+    android:padding="10dp">
+
+    <!-- outRecord[1]="2|1|1|2|2|1|60"; -->
+
+    <ImageView android:id="@+id/fancyRow02Img"
+        android:contentDescription="Row data"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ok" />
+
+    <TextView android:id="@+id/fancyRow02text1"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text2"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text3"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text4"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text5"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text6"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text7"
+        android:layout_width="90dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/fancyRow02text8"
+        android:layout_width="90dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+</LinearLayout>

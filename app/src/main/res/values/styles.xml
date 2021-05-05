@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+        <!-- MLV - This references the style that was added below -->
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.stylingactionbar.widget</item>
+    </style>
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/sa_blue</item>
+        <item name="android:backgroundStacked">@color/menu_blue</item>
+        <item name="android:backgroundSplit">@color/accent_blue</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/menu_blue</item>
+        <item name="android:backgroundStacked">@color/menu_blue</item>
+        <item name="android:backgroundSplit">@color/deep_blue</item>
+    </style>
+
+    <!--style name="DropDownListView" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse" -->
+    <style name="DropDownListView" parent="@android:style/Theme.Holo.Light">
+        <item name="android:background">#808080</item>              <!-- This is the settings pop-up background -->
+        <item name="android:backgroundStacked">@color/menu_blue</item>
+        <item name="android:backgroundSplit">@color/deep_blue</item>
+
+
+    </style>
+
+    <style name="Theme.stylingactionbar.widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+    </style>
+
+</resources>

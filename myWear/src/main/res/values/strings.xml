@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">dExtender-cgm</string>
+    <string name="round">r</string>
+    <string name="square">s</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+
+    <string name="current_time">00:00:00</string>
+    <string name="high_value">---</string>
+    <string name="low_value">---</string>
+    <string name="bg_value">---</string>
+    <string name="graph_description">this is a graph</string>
+    <string name="last_update">no update</string>
+    <string name="last_update_title">Last update on</string>
+
+</resources>

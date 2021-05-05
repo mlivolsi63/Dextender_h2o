@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dextender.dextender_h2o" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- =============================================================================== -->
+    <!-- When Clicking the icon, the splash screen is the first thing that gets started  -->
+    <!-- =============================================================================== -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tapir2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+
+        <!-- ========================================================================== -->
+        <!-- Splash Screen                                                              -->
+        <!-- ========================================================================== -->
+        <activity
+            android:name=".MySplash" android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- =============================================================================== -->
+        <!-- Activity - the main activity                                                    -->
+        <!-- =============================================================================== -->
+        <activity
+            android:name=".MyActivity" android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.MYACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- =============================================================================== -->
+        <!-- Preference -->
+        <!-- =============================================================================== -->
+        <activity
+            android:name=".fragment_preference"
+            android:label="dExtender settings"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.PREFERENCE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- =============================================================================== -->
+        <!-- frag1.. aka system controls Details                                             -->
+        <!-- =============================================================================== -->
+        <!--
+        <activity
+            android:name=".fragment_1_system_controls"
+            android:label="System Controls"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.SYSTEM_CONTROLS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- =============================================================================== -->
+        <!-- Zone Details                                                                    -->
+        <!-- =============================================================================== -->
+        <!--
+        <activity
+            android:name=".fragment_3_detail"
+            android:label="Zone Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.ZONE_DETAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- =============================================================================== -->
+        <!-- Sequence Details                                                                -->
+        <!-- =============================================================================== -->
+        <!--
+        <activity
+            android:name=".fragment_4_detail"
+            android:label="Sequence Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.SEQUENCE_DETAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- =============================================================================== -->
+        <!-- Add Sequence 2                                                                   -->
+        <!-- =============================================================================== -->
+        <activity
+            android:name=".fragment_4_addseq"
+            android:label="Sequence details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.ADD_SEQUENCE2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- =============================================================================== -->
+        <!-- Schedule Details                                                                -->
+        <!-- =============================================================================== -->
+        <!--
+        <activity
+            android:name=".fragment_5_detail"
+            android:label="Schedule Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.SCHEDULE_DETAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- =============================================================================== -->
+        <!-- Add Schedule                                                                    -->
+        <!-- =============================================================================== -->
+        <activity
+            android:name=".fragment_5_addschedule"
+            android:label="Add Schedule"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.ADD_SCHEDULE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- =============================================================================== -->
+
+        <activity
+            android:name=".MyAbout"
+            android:label="About"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dextender.dextender_h2o.ABOUT_H2O" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- =============================================================================== -->
+        <!-- Service -->
+        <!-- =============================================================================== -->
+        <service
+            android:enabled="true"
+            android:exported="false"
+            android:name=".MyService"
+            >
+        </service>
+        <!-- =============================================================================== -->
+        <!-- Alarming and waking up the service -->
+        <!-- =============================================================================== -->
+        <!--- This section for alarming and waking up the service -->
+        <receiver
+            android:enabled="true"
+            android:name=".MyReceiver"
+        />
+
+    </application>
+
+</manifest>
